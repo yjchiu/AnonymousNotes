@@ -1,0 +1,13 @@
+#notes_container{
+    margin-top: 40px;
+    border: 2px solid black;
+    height: 400px;
+    overflow-y: scroll;
+}
+.note_box{
+    width: 900px;
+    height: 240px;
+    border: 2px solid black;
+    margin:auto;
+    margin-top: 30px;
+}

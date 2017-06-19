@@ -1,0 +1,11 @@
+<div>
+  <h1>Anonymous Notes</h1>
+  <app-add-note (passNotes) = "receivedNotes($event)"></app-add-note>
+  <!--<button class="btn btn-primary" (click)="receivNotes()">Test click</button>-->
+  <div id="notes_container">
+    <div class="note_box" *ngFor="let note of notes ">
+      <p>Noted on: {{ note.created_at | date:'medium' }}</p>
+      <h3>{{note.content }}</h3>
+    </div>
+  </div>
+</div>
